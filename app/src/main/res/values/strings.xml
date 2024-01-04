@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ToDo App</string>
+    <string name="enter_todo"><i>What needs to be done?</i></string>
+    <string name="add">+</string>
+    <string name="title">todos</string>
+    <string name="remove">x</string>
+    <string name="all">All</string>
+    <string name="active">Active</string>
+    <string name="complete">Complete</string>
+    <string name="save">Save</string>
+    <string name="back">Go Back</string>
+    <string name="last_updated">Last Updated: %1s</string>
+    <string name="create_date">Created On: %1s</string>
+    <string name="edit_todo">Edit Todo</string>
+</resources>
