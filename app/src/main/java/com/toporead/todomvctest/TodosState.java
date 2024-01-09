@@ -1,4 +1,6 @@
 package com.toporead.todomvctest;
 
-public class TodosState {
-}
+    public enum TodosState{
+        ALL,ACTIVE,COMPLETED;
+    }
+
