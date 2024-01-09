@@ -8,7 +8,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Transformations;
 import java.util.Date;
 import java.util.List;
-import java.util.function.Function;
+
 
 
 
@@ -19,6 +19,7 @@ public class TodoViewModel extends AndroidViewModel {
 
     public TodoViewModel (Application application) {
         super(application);
+
         this.currentFilter =new MutableLiveData<>();
         mTodoData = Transformations.switchMap(currentFilter, input -> {
             if (input.equals(TodosState.ACTIVE)){
@@ -29,6 +30,7 @@ public class TodoViewModel extends AndroidViewModel {
                 return mRepository.getAllTodos();
             }
         });
+        mRepository =new TodoRepository(application);
     }
     LiveData<List<TodoItem>> getTodos() { return mTodoData; }
 

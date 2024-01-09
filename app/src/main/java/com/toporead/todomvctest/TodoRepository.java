@@ -3,12 +3,9 @@ package com.toporead.todomvctest;
 
 import android.app.Application;
 import android.os.AsyncTask;
-
 import androidx.lifecycle.LiveData;
-
-import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Vector;
+
 
 public class TodoRepository {
     ///1111111111111
@@ -34,7 +31,7 @@ public class TodoRepository {
     }
 
     public void insert(TodoItem todo){
-        new insertAsyncTask(mTodoDao).execute();
+        new insertAsyncTask(mTodoDao).execute(todo);
     }
     public void update(TodoItem todo) {
         new updateAsyncTask(mTodoDao).execute(todo);

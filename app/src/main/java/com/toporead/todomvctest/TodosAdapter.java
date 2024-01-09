@@ -36,6 +36,8 @@ public class TodosAdapter extends RecyclerView.Adapter<TodosAdapter.MyViewHolder
             super(v);
             mTodoItem = v;
             removeTodo =v.findViewById(R.id.removeTodo);
+            todoText =v.findViewById(R.id.todoText);
+            completedTodo =v.findViewById(R.id.completeTodo);
         }
         void bind(final TodoItem todo){
             removeTodo.setOnClickListener(new View.OnClickListener() {
